@@ -6,15 +6,20 @@ const WrappSquare = styled.div`
     align-items: center;
     background-color: #f9f9f9;
     border: 2px solid #d6dce1;
-    width: 100%;
     height: 280px;
 
-    &:first-child{
-        margin-top: 25px;
+    @media (min-width: 768px) {
+        width: 50%;
+    }
+    @media (min-width: 1600px) {
+        width: 33.33%;
+        height: 40vh;
     }
 `
 const Photo = styled.img` 
     width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 `
 const Text = styled.p` 
     width: 91%;

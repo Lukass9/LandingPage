@@ -20,12 +20,18 @@ const Wrapp = styled.article`
         top: 0;
         width: 100%;
         height: 100%;
-        opacity: 0.6;
+        opacity: 1;
         background-image: url(${BgBenefits});
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
         z-index: -1;
+    }
+    @media (min-width: 1024px) {
+        &::before{
+            content: ' ';
+            background-size: 40%;
+        }  
     }
 `
 const Header = styled.header`
@@ -41,6 +47,22 @@ const Title = styled.h1`
     font-weight: bold;
     margin: 20px 5px 0 0;
 `
+const WrappCircle = styled.div` 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 1024px) {
+        margin: 50px 0;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    @media (min-width: 1600px) {
+        justify-content: space-between;
+    }
+`
 const Benefits = () =>{
     return(
         <Wrapp>
@@ -48,22 +70,24 @@ const Benefits = () =>{
                 <Title>KORZYŚCI</Title>
                 <RectangleImg src={Rectangle}/>
             </Header>
-            <Circle 
-                pic={online_shopping_delivery} 
-                title="Dożywotnia gwarancja"
-                description="Wybierając nasze skrzynie transportowe otrzymujesz dożywotnią gwarancję." />
-            <Circle 
-                pic={order_delivery_online} 
-                title="Sprawna dostawa"
-                description="Zapewniamy sprawną dostawę na terenie całej Polski." />
-            <Circle 
-                pic={closeup_delivery} 
-                title="Możliwość zwrotu"
-                description="Możliwość wymiany lub zwrot kosztów." />
-            <Circle 
-                pic={elegant} 
-                title="Różnorodna oferta"
-                description="Proponujemy wybór spośród wielu wymiarów, modeli i kolorów."/>
+            <WrappCircle>
+                <Circle 
+                    pic={online_shopping_delivery} 
+                    title="Dożywotnia gwarancja"
+                    description="Wybierając nasze skrzynie transportowe otrzymujesz dożywotnią gwarancję." />
+                <Circle 
+                    pic={order_delivery_online} 
+                    title="Sprawna dostawa"
+                    description="Zapewniamy sprawną dostawę na terenie całej Polski." />
+                <Circle 
+                    pic={closeup_delivery} 
+                    title="Możliwość zwrotu"
+                    description="Możliwość wymiany lub zwrot kosztów." />
+                <Circle 
+                    pic={elegant} 
+                    title="Różnorodna oferta"
+                    description="Proponujemy wybór spośród wielu wymiarów, modeli i kolorów."/>
+            </WrappCircle>
                 
         </Wrapp>
     )

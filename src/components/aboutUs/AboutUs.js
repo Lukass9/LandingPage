@@ -19,13 +19,27 @@ const Title = styled.h1`
     margin: 20px 5px 0 0;
 `
 const WrappGridLayout = styled.article` 
+    display: flex;
+    flex-direction: column;
     width: 100vw;
-    overflow: hidden;
+    margin-top: 25px;
+   
+    @media (min-width: 768px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    @media (min-width: 1600px) {
+        width: 80vw;
+    }
 `
-
+const Wrapp = styled.section` 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
 const AboutUs = () =>{
     return (
-        <>
+        <Wrapp>
             <Header>
                 <RectangleImg src={Rectangle}/>
                 <Title> O NAS</Title>
@@ -41,7 +55,7 @@ const AboutUs = () =>{
                 <Square photo={null} alt={null}
                         text="Znajdź skrzynię dopasowaną do Twoich potrzeb. Oferta obejmuje rozwiązania dla sprzetów: militarnych, medycznych, sportowych, fotograficznych i profesjonalnych urządzeń elektronicznych. Skrzynie odstępne w szerokiej palecie kolorystycznej - do 10 kolorów."/>
             </WrappGridLayout>
-        </>
+        </Wrapp>
     )
 }
 

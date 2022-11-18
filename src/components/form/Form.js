@@ -2,6 +2,7 @@ import styled from "styled-components"
 import FormField from "./formField/FormField"
 import bgForm from "../../assets/images/bgform.png"
 import Consent from "./consent/Consent"
+import Button from "./button/button"
 
 const Wrapp = styled.article`
     display: flex;
@@ -10,14 +11,36 @@ const Wrapp = styled.article`
     background-image: url(${bgForm});
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: -200px 0px;
+    background-position: -550px 0px;
+    padding: 50px 0;
 
     @media (min-width: 600px) {
-        background-position: -100px 0px;
+        background-position: -400px 0px;
+    }
+    @media (min-width: 960px) {
+        background-position: -200px 0px;
+    }
+    @media (min-width: 1100px) {
+        background-position: 0px 0px;
     }
 `
-const Form = styled.form`   
-    width: 50vw;
+const Form = styled.form`  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    padding: 50px 0;
+
+    @media (min-width: 667px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 73vw;
+        justify-content: space-between;
+    }
+    @media (min-width: 1600px) {
+        width: 50vw;
+        justify-content: space-between;
+    }
 `
 const Header = styled.header`
     display: flex;
@@ -50,6 +73,7 @@ const ContactForm = () =>{
                 <FormField name="phone" label="Telefon" placeholder="Wpisz numer"/>
                 <FormField name="message" label="Wiadomość *" placeholder="Wpisz treść wiadomości" isTextArea={true}/>
                 <Consent name="consent" label="* oświadczam, że zapoznałem się i akceptuje Regulamin. Wyrażam zgodę na przetwarzanie mich danych osobowych przez N-Cases, w celu świadczenia usług w ramach serwisu oraz kontaktu za pomocą urządzeń końcowych telekomunikacyjnych związanego ze zgłoszeniem."/>
+                <Button/>
             </Form>
         </Wrapp>
     )

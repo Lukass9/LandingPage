@@ -10,7 +10,7 @@ const Label = styled.label `
   padding: 10px;
   background-color: #f1f1f7;
   border-radius: 5px;
-  width: 84%;
+  width: 100%;
 `
 const Input = styled.input `
   display: none;

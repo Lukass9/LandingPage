@@ -11,6 +11,11 @@ const List = styled.ul`
     margin: 0;
     display: flex;
     justify-content: center;
+
+    @media (min-width: 768px) {
+        justify-content:flex-end;
+        margin-right: 5%;
+    }
 `
 const ListItem = styled.li` 
     color: #686868;
