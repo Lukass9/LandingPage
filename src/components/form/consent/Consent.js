@@ -1,5 +1,5 @@
 import styled from "styled-components";
-// import { useRef, useState } from "react";
+import { useRef, useState } from "react";
 
 const Wrapper = styled.div `
     display: flex;
@@ -24,8 +24,8 @@ const Checkbox = styled.label `
     margin: 10px 5px;
     
     ::after{
-        content: ${({isChecked})=> isChecked? " " : "none"};
-        display: block;
+        content: " ";
+        display: ${({isChecked}) => isChecked? "block" : "none"};
         position: absolute;
         width: 10px;
         height: 10px;
@@ -37,17 +37,15 @@ const Checkbox = styled.label `
     }
 `
 const Consent = ({name, label}) => {
-    // const ref = useRef(null);
-    // const [isChecked, setIsChecked] = useState('')
-    // const handleSetIsChecked = (e) =>{
-    //     console.log(e)
-    //     // setIsChecked(e.current.checked)
-    // }
-    // console.log(ref.current.checked)
+    const consentRef = useRef(null);
+    const [isChecked, setIsChecked] = useState('')  
+    const handleSetIsChecked = (e) =>{
+        setIsChecked(prev => prev = e.target.checked)
+    }
     return (
       <Wrapper>
-        <Input  id={name} name="name" type="checkbox" /> 
-        <Checkbox isChecked={true} htmlFor={name}/>
+        <Input ref={consentRef} onChange={handleSetIsChecked} id={name} name="name" type="checkbox" /> 
+        <Checkbox isChecked={isChecked} htmlFor={name}/>
         <Label htmlFor={name}>{label}</Label>
       </Wrapper>
     );
