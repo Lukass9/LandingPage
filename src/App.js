@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import { GlobalStyle } from "./assets/styles/GlobalStyles";
 import AboutUs from "./components/aboutUs/AboutUs";
 import Benefits from "./components/beneftis/Benefits";
@@ -11,9 +10,9 @@ const App = () => {
     <>
       <GlobalStyle/>
       <Nav/>
-      <Benefits/>
-      <AboutUs/>
-      <ContactForm/>
+      <Benefits />
+      <AboutUs />
+      <ContactForm />
       <Footer/>
     </>
   );

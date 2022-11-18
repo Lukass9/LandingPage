@@ -1,35 +1,13 @@
-import styled from "styled-components"
-const Navigation = styled.nav`
-    position: sticky;
-    background-color: #fff;
-    top: 0;
-    width: 100vw;
-    box-shadow: 0px 5px 5px 0px rgba(104, 104, 104, .5);
-    z-index: 10;
-`
-const List = styled.ul`
-    margin: 0;
-    display: flex;
-    justify-content: center;
-
-    @media (min-width: 768px) {
-        justify-content:flex-end;
-        margin-right: 5%;
-    }
-`
-const ListItem = styled.li` 
-    color: #686868;
-    list-style-type: none;
-    padding: 20px;
-`
+import { Link } from 'react-scroll'
+import { List, ListItem, Navigation } from './Nav copy'
 
 const Nav = () =>{
     return(
         <Navigation>
             <List>
-                <ListItem>Korzyści</ListItem>
-                <ListItem>O nas</ListItem>
-                <ListItem>Kontakt</ListItem>
+                <ListItem as={Link} offset={-50} activeClass="active" smooth spy to="benefits">Korzyści</ListItem>
+                <ListItem as={Link} offset={-50} activeClass="active" smooth spy to="about">O nas</ListItem>
+                <ListItem as={Link} offset={-50} activeClass="active" smooth spy to="contact">Kontakt</ListItem>
             </List>
         </Navigation>
     )

@@ -1,45 +1,13 @@
-import styled from "styled-components"
 import Rectangle from "../../assets/images/Prostokąt20.png"
 import pic1 from "../../assets/images/1.png"
 import pic2 from "../../assets/images/feature-wheels_720x.png"
 import pic3 from "../../assets/images/fotka.png"
 import Square from "./square/Square"
+import { Header, Wrapp, RectangleImg, Title, WrappGridLayout } from "./AboutUs.style"
 
-const Header = styled.header`
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    width: 100vw;
-`
-const RectangleImg = styled.img` 
-    width: 8%;
-`
-const Title = styled.h1`
-    font-weight: bold;
-    margin: 20px 5px 0 0;
-`
-const WrappGridLayout = styled.article` 
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    margin-top: 25px;
-   
-    @media (min-width: 768px) {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    @media (min-width: 1600px) {
-        width: 80vw;
-    }
-`
-const Wrapp = styled.section` 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-`
 const AboutUs = () =>{
     return (
-        <Wrapp>
+        <Wrapp id="about">
             <Header>
                 <RectangleImg src={Rectangle}/>
                 <Title> O NAS</Title>

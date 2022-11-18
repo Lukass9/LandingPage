@@ -14,5 +14,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
   }
 `;
