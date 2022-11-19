@@ -4,7 +4,7 @@ import { ButtonText, ButtonWithArrow, WrappButton } from "./button.style"
 const Button = () =>{
     return (
         <WrappButton>
-            <ButtonWithArrow>
+            <ButtonWithArrow type="submit">
                 <ButtonText>WYŚLIJ</ButtonText>
                 <img src={arrow} alt="arrow"/>
             </ButtonWithArrow>

@@ -1,7 +1,9 @@
 import styled from "styled-components";
 export const Wrapper = styled.div `
     display: flex;
+    position: relative;
     flex-direction: column;
+    margin: 2.5% 0;
     
     :nth-child(5) {
       width: 100%;
@@ -11,7 +13,7 @@ export const Wrapper = styled.div `
       }
     }
     @media (min-width: 1600px) {
-      margin: 1.5% 0;
+      margin: 2.5% 0;
     }
     ` 
 export const Label = styled.label `
@@ -19,6 +21,9 @@ export const Label = styled.label `
   `
 export const Error = styled.label` 
   color: red;
+  position: absolute;
+  bottom: -20px;
+  font-size: 11px;
   `
 export const Input = styled.input `
   border: 1px solid #000;
@@ -27,6 +32,7 @@ export const Input = styled.input `
   min-width: 25vw;
   max-width: 50vw; // desktop max 25vw
   height: ${({isTextArea})=> isTextArea? '100px' : "auto"};
+  border: 1px solid ${({isError})=> isError? "red" : "black"} ;
 
   &::placeholder{
     color: #c9c9c9;
