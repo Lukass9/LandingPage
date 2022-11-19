@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.js": "/smartheads-task/static/js/main.02a8438d.js",
-    "static/js/787.5597c260.chunk.js": "/smartheads-task/static/js/787.5597c260.chunk.js",
-    "static/media/bgform.png": "/smartheads-task/static/media/bgform.9a1d6e0ecde3cdee3c77.png",
-    "static/media/walizka.png": "/smartheads-task/static/media/walizka.2f386262f04450ee770b.png",
-    "static/media/fotka.png": "/smartheads-task/static/media/fotka.d418f8113aa3239d17dc.png",
-    "static/media/1.png": "/smartheads-task/static/media/1.97d58a3dcf3fc231c527.png",
-    "static/media/elegant.png": "/smartheads-task/static/media/elegant.acb090b103380bd85d11.png",
-    "static/media/feature-wheels_720x.png": "/smartheads-task/static/media/feature-wheels_720x.da6610383bf6133ede81.png",
-    "static/media/closeup-delivery.png": "/smartheads-task/static/media/closeup-delivery.245551d7013b26a9d5b5.png",
-    "static/media/order-delivery-online.png": "/smartheads-task/static/media/order-delivery-online.250f7e48930631776ffd.png",
-    "static/media/online-shopping-delivery.png": "/smartheads-task/static/media/online-shopping-delivery.9b9dfd67926fd14385e8.png",
-    "index.html": "/smartheads-task/index.html",
-    "main.02a8438d.js.map": "/smartheads-task/static/js/main.02a8438d.js.map",
-    "787.5597c260.chunk.js.map": "/smartheads-task/static/js/787.5597c260.chunk.js.map"
+    "main.js": "/LandingPage/static/js/main.db317ac5.js",
+    "static/js/787.5597c260.chunk.js": "/LandingPage/static/js/787.5597c260.chunk.js",
+    "static/media/bgform.png": "/LandingPage/static/media/bgform.9a1d6e0ecde3cdee3c77.png",
+    "static/media/walizka.png": "/LandingPage/static/media/walizka.2f386262f04450ee770b.png",
+    "static/media/fotka.png": "/LandingPage/static/media/fotka.d418f8113aa3239d17dc.png",
+    "static/media/1.png": "/LandingPage/static/media/1.97d58a3dcf3fc231c527.png",
+    "static/media/elegant.png": "/LandingPage/static/media/elegant.acb090b103380bd85d11.png",
+    "static/media/feature-wheels_720x.png": "/LandingPage/static/media/feature-wheels_720x.da6610383bf6133ede81.png",
+    "static/media/closeup-delivery.png": "/LandingPage/static/media/closeup-delivery.245551d7013b26a9d5b5.png",
+    "static/media/order-delivery-online.png": "/LandingPage/static/media/order-delivery-online.250f7e48930631776ffd.png",
+    "static/media/online-shopping-delivery.png": "/LandingPage/static/media/online-shopping-delivery.9b9dfd67926fd14385e8.png",
+    "index.html": "/LandingPage/index.html",
+    "main.db317ac5.js.map": "/LandingPage/static/js/main.db317ac5.js.map",
+    "787.5597c260.chunk.js.map": "/LandingPage/static/js/787.5597c260.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.02a8438d.js"
+    "static/js/main.db317ac5.js"
   ]
 }
